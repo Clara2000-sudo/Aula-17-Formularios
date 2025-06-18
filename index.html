@@ -21,14 +21,12 @@
     }
 
     legend {
-      font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1.0rem;
     }
 
     label {
       display: block;
       margin-top: 15px;
-      font-weight: bold;
     }
 
     input[type="text"],
@@ -72,6 +70,10 @@
     button {
       padding: 10px 20px;
       font-weight: bold;
+    }
+
+    #brilho {
+      width: 150px;
     }
     </style>
     <!--Dados Pessoais-->
@@ -124,25 +126,6 @@
     <label for="brilho">Intensidade da cor (brilho):</label>
     <input type="range" id="brilho" name="brilho" min="0" max="100" value="50" style="accent-color: blue;">
     </fieldset>
-     <fieldset>
-    <legend>Escolha do Carro</legend>
-
-    <label>Escolha o modelo:</label>
-    <input type="radio" name="modelo" value="seal"> BYD Seal<br>
-    <input type="radio" name="modelo" value="han"> BYD Han<br>
-    <input type="radio" name="modelo" value="songplus"> BYD Song Plus
-
-    <label>Itens adicionais:</label>
-    <input type="checkbox" name="itens" value="som"> Som Premium<br>
-    <input type="checkbox" name="itens" value="ar"> Ar-condicionado Digital<br>
-    <input type="checkbox" name="itens" value="camera"> Câmera 360º
-
-    <label for="cor">Cor do carro:</label>
-    <input type="color" id="cor" name="cor">
-
-    <label for="brilho">Intensidade da cor (brilho):</label>
-    <input type="range" id="brilho" name="brilho" min="0" max="100" value="50">
-  </fieldset>
 
   <!--Entrega-->
   <fieldset>
@@ -171,13 +154,13 @@
     <legend>Avaliação dos Modelos BYD</legend>
 
     <label for="dolphin">Avalie o BYD Dolphin Plus:</label>
-    <input type="text" id="dolphin" name="dolphin" placeholder="0 a 5 estrelas">
+    <input type="number" id="dolphin" name="dolphin" placeholder="0 a 5 estrelas">
 
     <label for="gs">Avalie o BYD GS:</label>
-    <input type="text" id="gs" name="gs" placeholder="0 a 5 estrelas">
+    <input type="number" id="gs" name="gs" placeholder="0 a 5 estrelas">
 
     <label for="mini">Avalie o BYD Mini:</label>
-    <input type="text" id="mini" name="mini" placeholder="0 a 5 estrelas">
+    <input type="number" id="mini" name="mini" placeholder="0 a 5 estrelas">
   </fieldset>
   <!--Botões-->
   <div class="button-group">
