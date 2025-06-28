@@ -110,15 +110,47 @@
    <fieldset>
     <legend>Escolha do Carro</legend>
 
+<!-- //---------------- -->
+
+<fieldset>
+  <legend>Sexo</legend>
+  <!-- input radio
+      - Para deixar uma opção já selecionada usa checked
+      Obs.: Só consigo colocar checked em uma opção no "radio"
+      Obs.: As duas bolinhas devem ter o mesmo "name"
+  -->
+      <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+      <input type="radio" name="sexo" id="isxfem" value="F" checked> <label for="isxfem">Feminino</label>
+</fieldset>
+<fieldset>
+  <legend>Esportes favoritos</legend>
+  <!-- input checkbox
+      - Caixa quadrada que consegue marcar e desmarcar
+      - Utilização do ALT para colocar o br
+      - Envelopar CTRL+SHIFT+P -> label
+  -->
+  <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label><br>
+  <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label><br>
+  <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+  <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
+</fieldset>
+
+
+
+
+
+
+<!-- //-------------------------- -->
+
     <label>Escolha o modelo:</label>
-    <input type="radio" name="modelo" value="seal"> BYD Seal<br>
-    <input type="radio" name="modelo" value="han"> BYD Han<br>
-    <input type="radio" name="modelo" value="songplus"> BYD Song Plus
+    <input type="radio" name="modelo" id="mod1" value="seal"> <label for="mod1">BYD Seal</label>
+    <input type="radio" name="modelo" id="mod2" value="han"> <label for="mod2">BYD Han</label>
+    <input type="radio" name="modelo" id="mod3" value="songplus"> <label for="mod3">BYD Song Plus</label>
 
     <label>Itens adicionais:</label>
-    <input type="checkbox" name="itens" value="som"> Som Premium<br>
-    <input type="checkbox" name="itens" value="ar"> Ar-condicionado Digital<br>
-    <input type="checkbox" name="itens" value="camera"> Câmera 360º
+    <input type="checkbox" name="itens" id="mod4" value="som"> <label for="mod4">Som Premium</label><br>
+    <input type="checkbox" name="itens" id="mod5" value="ar"> <label for="mod5">Ar-condicionado Digital</label><br>
+    <input type="checkbox" name="itens" id="mod6" value="camera"> <label for="mod6">Câmera 360º</label>
 
     <label for="cor">Cor do carro:</label>
     <input type="color" id="cor" name="cor" style="width: 50px; height: 30px; padding: 0; border: none;">
